@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
     public GameObject Pointer;
     public Vector3 target;
     bool moveCheck;
+	private int lockPos = 0;
     
     
 
@@ -26,7 +27,8 @@ public class PlayerController : MonoBehaviour {
         Movement();
         //FaceMouse();
      
-        
+		transform.rotation = Quaternion.Euler (transform.rotation.eulerAngles.x, lockPos, lockPos); // locks the rotation
+
     }
 
     void Movement ()

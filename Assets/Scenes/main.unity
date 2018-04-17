@@ -1143,6 +1143,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6600e47669f604846b4cbbf3bdd1bae6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1173595644 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1434891697845106, guid: 101af1e7394d775409106556bf9f539a,
+    type: 2}
+  m_PrefabInternal: {fileID: 527577651}
 --- !u!4 &1181796443 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4101248619191256, guid: 6600e47669f604846b4cbbf3bdd1bae6,
@@ -1377,6 +1382,7 @@ GameObject:
   - component: {fileID: 1457769071}
   - component: {fileID: 1457769069}
   - component: {fileID: 1457769068}
+  - component: {fileID: 1457769070}
   m_Layer: 9
   m_Name: Soldier
   m_TagString: Enemy
@@ -1514,6 +1520,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1457769070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457769063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efeb4aab1060849038e53f376f0e7d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1457769071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1525,6 +1542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c1501adcb6007b448b2ba4c17fd06ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1173595644}
+  moveSpeed: 0.025
 --- !u!195 &1457769072
 NavMeshAgent:
   m_ObjectHideFlags: 0

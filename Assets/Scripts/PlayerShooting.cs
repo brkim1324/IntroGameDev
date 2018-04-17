@@ -71,4 +71,10 @@ public class PlayerShooting : MonoBehaviour {
         }
     }
 
+	IEnumerator DisableBulletTrail(){
+
+		//return yield WaitForSeconds(0.2f);
+
+	}
+
 }
